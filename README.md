@@ -1,5 +1,5 @@
 # Term-project-Mobile-Programming
-Mobile Programming(3-2) - Term project
+Mobile Programming (3-2) - Term project
 
 ## 운동하는 단국인 (운동 기록 관리 어플) 
 
