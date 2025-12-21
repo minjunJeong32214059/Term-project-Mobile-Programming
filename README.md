@@ -101,8 +101,11 @@ WorkoutHistoryActivity
 
 ---
 
+
 ## 📌 실행 방법
 1. Android Studio에서 프로젝트 열기
-2. `local.properties`에 Gemini API Key 추가
-3. Emulator 또는 실제 기기에서 실행
+2. (선택) Gemini AI 기능 사용 시 `local.properties`에 Gemini API Key 추가  
+3. Emulator 또는 실제 기기에서 실행  
+※ API 키가 없어도 앱의 기본 기능은 정상 실행됩니다.
+
 
