@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvExerciseName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginEnd="12dp"/>
+
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:stateListAnimator="@null"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:clipToPadding="false"/>
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아직 세트가 없습니다.\n세트를 추가해 주세요."
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="24dp"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/layoutRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/btnRestMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5" />
+
+            <TextView
+                android:id="@+id/tvRestTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="휴식 60초"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:textColor="@color/text_primary"/>
+
+            <Button
+                android:id="@+id/btnRestPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGemini"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="AI"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/btn_circle_red"
+            android:stateListAnimator="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnAddSet"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="세트 추가"
+        android:textColor="@color/primary_red"
+        android:background="@drawable/btn_outline_red"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="완료 · 다음 운동"
+        android:textColor="@color/text_primary"
+        android:background="@drawable/btn_primary_red"/>
+
+
+</LinearLayout>

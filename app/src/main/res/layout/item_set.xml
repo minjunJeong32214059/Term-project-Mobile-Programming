@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvSetNumber"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"/>
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KG"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/text_primary"/>
+
+        <EditText
+            android:id="@+id/etReps"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="횟수"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/text_primary"/>
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료"/>
+
+        <TextView
+            android:id="@+id/btnDelete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="✕"
+            android:textColor="#E53935"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginStart="6dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

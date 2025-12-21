@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동 결과"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_dark"
+            android:padding="12dp"
+            android:elevation="4dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_card_dark"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="운동 요약"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvTotalSets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총 세트: 0"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvTotalReps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총 반복수: 0"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvTotalWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총 중량: 0kg"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvTotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총 운동 시간: 00:00"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="32dp"/>
+
+        <Button
+            android:id="@+id/btnGoHome"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="메인으로"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:background="@drawable/btn_primary_red"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+</ScrollView>

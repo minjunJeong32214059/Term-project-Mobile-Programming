@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동 목록"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:textColor="@color/text_primary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="운동 검색"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+
+            android:background="@drawable/bg_input_light"
+            android:paddingHorizontal="12dp"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layoutCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:text="전체"
+                android:tag="전체"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_chip_selector"
+                android:textColor="@color/text_primary"
+                android:minHeight="36dp"
+                android:paddingHorizontal="14dp"
+                android:textSize="13sp"/>
+
+            <Button
+                android:text="가슴"
+                android:tag="가슴"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_chip_selector"
+                android:textColor="@color/text_primary"
+                android:minHeight="36dp"
+                android:paddingHorizontal="14dp"
+                android:textSize="13sp"/>
+
+            <Button
+                android:text="등"
+                android:tag="등"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_chip_selector"
+                android:textColor="@color/text_primary"
+                android:minHeight="36dp"
+                android:paddingHorizontal="14dp"
+                android:textSize="13sp"/>
+
+            <Button
+                android:text="어깨"
+                android:tag="어깨"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_chip_selector"
+                android:textColor="@color/text_primary"
+                android:minHeight="36dp"
+                android:paddingHorizontal="14dp"
+                android:textSize="13sp"/>
+
+            <Button
+                android:text="하체"
+                android:tag="하체"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_chip_selector"
+                android:textColor="@color/text_primary"
+                android:minHeight="36dp"
+                android:paddingHorizontal="14dp"
+                android:textSize="13sp"/>
+
+            <Button
+                android:text="팔"
+                android:tag="팔"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_chip_selector"
+                android:textColor="@color/text_primary"
+                android:minHeight="36dp"
+                android:paddingHorizontal="14dp"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExercises"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp" />
+
+    <Button
+        android:id="@+id/btnGoPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="담은 운동 보기"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

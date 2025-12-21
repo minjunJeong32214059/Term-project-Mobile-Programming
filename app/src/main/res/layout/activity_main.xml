@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/bg_main">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동하는 단국인"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_gravity="center_horizontal"/>
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:background="@color/primary_red" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="새로운 운동"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:background="@drawable/btn_primary_red"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="운동 기록 보기"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:background="@drawable/btn_outline_red"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
