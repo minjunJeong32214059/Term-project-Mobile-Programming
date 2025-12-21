@@ -43,18 +43,21 @@ Android 기반 개인 운동 기록 및 관리 앱
 ## 🧠 앱 구조 (Activity Flow)
 
 ```text
-MainActivity
-   ↓
-ExerciseListActivity
-   ↓
-ExerciseDetailActivity
-   ↓
-ExercisePlanActivity
-   ↓
-ExercisePerformActivity ──▶ Gemini AI (Q&A)
-   ↓
-WorkoutResultActivity ──▶ Room Database
-   ↓
+MainActivity  
+↓  
+ExerciseListActivity  
+↓  
+ExerciseDetailActivity  
+↓  
+ExercisePlanActivity  
+↓  
+ExercisePerformActivity  
+├─ Gemini AI (Q&A)  
+└─ Room Database (WorkoutSession / WorkoutSet 저장)  
+↓  
+WorkoutResultActivity  
+└─ Room Database (운동 결과 조회 및 요약 계산)  
+↓  
 WorkoutHistoryActivity
 ```
 
