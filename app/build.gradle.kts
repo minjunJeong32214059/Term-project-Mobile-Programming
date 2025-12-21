@@ -12,8 +12,8 @@ if (localPropertiesFile.exists()) {
 }
 
 val geminiApiKey: String =
-    localProperties.getProperty("GEMINI_API_KEY")
-        ?: throw GradleException("GEMINI_API_KEY is not set in local.properties")
+    localProperties.getProperty("GEMINI_API_KEY") ?: ""
+
 
 android {
     namespace = "kr.ac.dankook.jeong.workoutapp"
